@@ -1,0 +1,12 @@
+on: [push]
+
+name: Branch feature
+
+jobs:
+  hello-feature:
+    runs-on: ubuntu-latest
+    name: Say hello on feature branch
+    steps:
+      - name: Say hello
+        run: |
+          echo "Hello branch 'feature'!"

@@ -1,0 +1,12 @@
+on: [push]
+
+name: Branch main
+
+jobs:
+  hello-main:
+    runs-on: ubuntu-latest
+    name: Say hello on main branch
+    steps:
+      - name: Say hello
+        run: |
+          echo "Hello branch 'main'!"
